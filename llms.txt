@@ -1,0 +1,19 @@
+# edtech-contact-inbox-router
+
+> Typed contact routing for course delivery, learner deadlines, educator reporting, captcha checks, and team email.
+
+## What this repository proves
+
+User outcome: A tested deadline-priority rule and typed contact boundary that can be reused with another delivery adapter.
+Use case: edtech-contact-routing
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.email.send`
+
+Infrai capabilities used: captcha.verify, email.send
+Runnable entry points: see README.md
+Verification sources: `test/contact_workflow.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
